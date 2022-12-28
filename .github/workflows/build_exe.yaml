@@ -28,6 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pyinstaller
         pip install pygit2 pgzip
+        pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117
         pip install -r requirements.txt
 
     - name: Run tests
